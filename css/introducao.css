@@ -1,0 +1,36 @@
+#introducao {
+    margin: auto;
+    margin-top: 50px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+#introducao::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: greenyellow;
+    right: 645px;
+    z-index: -1;
+}
+
+#perfil {
+    width: 450px;
+    margin: 0px 50px;
+    align-self: center;
+    grid-row: 1 / 4;
+}
+
+#introducao h1 {
+    font-size: 4.5em;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#introducao p {
+    grid-column: 2;
+    grid-row: 2;
+}
